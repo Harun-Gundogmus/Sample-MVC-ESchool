@@ -1,0 +1,17 @@
+﻿@model EntityLayer.Teacher;
+@{
+    Layout = null;
+}
+<h1>Öğretmen Ekle</h1>
+<form asp-action="TeacherAdd" asp-controller="Teacher" method="post">
+    <div class="mb-3">
+        <label class="form-label">ÖĞRETMEN ADI</label>
+        <input asp-for="teacher_Name" type="text" class="form-control">
+
+    </div>
+    <div class="mb-3">
+        <label class="form-label">ÖĞRETMEN SOYADI</label>
+        <input type="text" class="form-control" asp-for="teacher_Surname">
+    </div>
+    <button type="submit" class="btn btn-primary">ÖĞRETMEN EKLE</button>
+</form>
